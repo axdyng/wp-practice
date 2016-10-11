@@ -19,3 +19,8 @@
   }
   // Add theme's support when wp is initialized
   add_action(init, test_theme_setup);
+
+  // Built-in theme supports
+  add_theme_support('post-thumbnails');
+  // There are 9 post-formats by WP
+  add_theme_support('post-formats', ['aside', 'image', 'video']);
